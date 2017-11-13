@@ -1,0 +1,27 @@
+{
+  "name": "generative_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@tweenjs/tween.js": "^17.1.1",
+    "css-loader": "^0.28.7",
+    "d3": "^4.11.0",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "scripts": {
+    "build": "webpack --progress --colors",
+    "production": "webpack -p --progress --colors",
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --port 8000",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "html-webpack-plugin": "^2.30.1"
+  }
+}
